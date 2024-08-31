@@ -40,7 +40,11 @@ body {
 /*Global*/
 .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 /*Left container*/
@@ -109,11 +113,18 @@ body {
 
 /*Right container*/
 .right-container {
+    width: 48%;
+}
+
+.right-container-form {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
     background-color: var(--main-white-color);
     border-radius: 32px;
+    width: 80%;
 }
 
 .signin-form {
@@ -132,14 +143,14 @@ body {
 .input-group {
     width: 100%;
     font-size: 16px;
+    padding: 0 56px;
 }
 
 #email,
 #password {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    width: 85%;
+    width: 100%;
     margin: 0 auto 24px;
     padding: 14px;
     border: 1px solid var(--content-light-grey-color);
